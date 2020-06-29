@@ -24,13 +24,13 @@ function updatePlayIcon() {
 
 // Update Progress and TimeStamp
 function updateProgress() {
-    return true;
+    progress.value = (video.currentTime / video.duration) * 100;
 }
 
 // Set Video time in progress
-function setVideoProgress() {
-    return true;
-}
+// function setVideoProgress() {
+//     video.currentTime = (+progress)
+// }
 
 // Stop Video
 function stopVideo() {
