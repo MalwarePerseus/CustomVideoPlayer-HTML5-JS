@@ -27,10 +27,10 @@ function updateProgress() {
     progress.value = (video.currentTime / video.duration) * 100;
 }
 
-// Set Video time in progress
-// function setVideoProgress() {
-//     video.currentTime = (+progress)
-// }
+// Set Video Time in Progress {SEEK}
+function setVideoProgress() {
+    video.currentTime = (+progress.value * video.duration) / 100;
+}
 
 // Stop Video
 function stopVideo() {
